@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# edu-commerce-ai
+Modern Educational E-commerce Platform with AI Integration - Course catalog, intelligent recommendations, shopping cart, and responsive design built with React &amp; Ant Design
+>>>>>>> f4455e34d7072c0ae0f455198cf709af4cfffdd7
