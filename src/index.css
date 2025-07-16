@@ -1170,3 +1170,29 @@ button, .ant-btn {
   border-color: rgba(255, 255, 255, 0.4) !important;
   font-weight: 700 !important;
 }
+
+/* Mobile checkout button fix */
+@media (max-width: 768px) {
+  .checkout-button-container {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+  
+  .checkout-button-container .ant-btn:first-child {
+    flex-shrink: 0 !important;
+    width: auto !important;
+  }
+  
+  .checkout-button-container .ant-btn:last-child {
+    flex: 1 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  .checkout-button-container .ant-btn:last-child span {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}

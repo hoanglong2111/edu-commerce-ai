@@ -1,5 +1,4 @@
 const mockData = [
-  // ========== EXISTING PRODUCTS ==========
   {
     id: 1,
     name: "JavaScript Từ Cơ Bản Đến Nâng Cao",
@@ -10,28 +9,23 @@ const mockData = [
     students: "12,450",
     duration: "40 giờ",
     instructor: "Nguyễn Văn An",
-    image: "/images/courses/javascript.jpg",
+    // 🆕 4 HÌNH ẢNH CHO JAVASCRIPT COURSE
+    images: [
+      "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop", // JS code
+      "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=250&fit=crop", // JS laptop
+      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop", // Coding setup
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop"  // Programming
+    ],
+    image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop", // Main image
     shortDesc: "Học JavaScript từ căn bản đến nâng cao với các dự án thực tế",
     level: "Tất cả cấp độ",
     language: "Tiếng Việt",
-    subtitle: true,
     certificate: true,
     features: [
-      "40 giờ video on-demand",
-      "15 bài tập coding",
-      "5 dự án thực tế",
-      "Truy cập trọn đời",
-      "Certificate hoàn thành"
-    ],
-    curriculum: [
-      {
-        title: "Giới thiệu JavaScript",
-        lessons: ["Cài đặt môi trường", "Biến và kiểu dữ liệu", "Toán tử"]
-      },
-      {
-        title: "Functions và Objects",
-        lessons: ["Function cơ bản", "Arrow function", "Object literal"]
-      }
+      "40+ giờ video HD",
+      "100+ bài tập thực hành", 
+      "10 dự án thực tế",
+      "Hỗ trợ trọn đời"
     ]
   },
   {
@@ -44,29 +38,17 @@ const mockData = [
     students: "8,320",
     duration: "50 giờ",
     instructor: "Trần Thị Bình",
-    image: "/images/courses/react.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop", // React logo
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // React code
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Web development
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"  // Computer coding
+    ],
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop",
     shortDesc: "Xây dựng ứng dụng web hiện đại với React.js",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "50 giờ video chất lượng cao",
-      "10 dự án React",
-      "State Management với Redux",
-      "Deploy lên production",
-      "Support 1-1"
-    ],
-    curriculum: [
-      {
-        title: "React Fundamentals",
-        lessons: ["Components", "Props", "State", "Events"]
-      },
-      {
-        title: "Advanced React",
-        lessons: ["Hooks", "Context API", "Performance"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 3,
@@ -78,29 +60,17 @@ const mockData = [
     students: "5,680",
     duration: "35 giờ",
     instructor: "Lê Văn Cường",
-    image: "/images/courses/python-ds.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop", // Python code
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop", // Data charts
+      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=250&fit=crop", // Data analysis
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"  // Analytics
+    ],
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop",
     shortDesc: "Phân tích dữ liệu và machine learning với Python",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "35 giờ học Python DS",
-      "Pandas, NumPy, Matplotlib",
-      "Machine Learning cơ bản",
-      "3 dự án thực tế",
-      "Dataset thực tế"
-    ],
-    curriculum: [
-      {
-        title: "Python Basics for DS",
-        lessons: ["NumPy", "Pandas", "Matplotlib"]
-      },
-      {
-        title: "Machine Learning",
-        lessons: ["Linear Regression", "Classification", "Clustering"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 4,
@@ -112,29 +82,17 @@ const mockData = [
     students: "15,230",
     duration: "30 giờ",
     instructor: "Phạm Thị Dung",
-    image: "/images/courses/digital-marketing.jpg",
-    shortDesc: "Chiến lược marketing số từ A-Z",
-    level: "Tất cả cấp độ",
-    language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "30 giờ video marketing",
-      "Facebook & Google Ads",
-      "SEO & Content Marketing",
-      "Analytics & Tracking",
-      "Case study thực tế"
+    images: [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop", // Marketing charts
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop", // Digital marketing
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop", // Social media
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop"  // Marketing team
     ],
-    curriculum: [
-      {
-        title: "Marketing Foundation",
-        lessons: ["Chiến lược", "Targeting", "Positioning"]
-      },
-      {
-        title: "Paid Advertising",
-        lessons: ["Facebook Ads", "Google Ads", "Analytics"]
-      }
-    ]
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
+    shortDesc: "Chiến lược marketing số từ A-Z",
+    level: "Cơ bản",
+    language: "Tiếng Việt",
+    certificate: true
   },
   {
     id: 5,
@@ -146,29 +104,17 @@ const mockData = [
     students: "7,890",
     duration: "45 giờ",
     instructor: "Hoàng Minh Tuấn",
-    image: "/images/courses/uiux.jpg",
-    shortDesc: "Thiết kế giao diện và trải nghiệm người dùng chuyên nghiệp",
-    level: "Tất cả cấp độ",
-    language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "45 giờ thiết kế UI/UX",
-      "Figma & Adobe XD",
-      "Design System",
-      "User Research",
-      "Portfolio projects"
+    images: [
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop", // UI/UX design
+      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=250&fit=crop", // Design process
+      "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=400&h=250&fit=crop", // Wireframes
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=250&fit=crop"  // Design tools
     ],
-    curriculum: [
-      {
-        title: "UI Design",
-        lessons: ["Typography", "Color Theory", "Layout", "Icons"]
-      },
-      {
-        title: "UX Design",
-        lessons: ["User Research", "Wireframing", "Prototyping", "Testing"]
-      }
-    ]
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop",
+    shortDesc: "Thiết kế giao diện và trải nghiệm người dùng chuyên nghiệp",
+    level: "Trung cấp",
+    language: "Tiếng Việt",
+    certificate: true
   },
   {
     id: 6,
@@ -180,40 +126,18 @@ const mockData = [
     students: "22,100",
     duration: "60 giờ",
     instructor: "Sarah Johnson",
-    image: "/images/courses/ielts.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=250&fit=crop", // English books
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop", // Study materials
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop", // IELTS test
+      "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=250&fit=crop"  // Language learning
+    ],
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=250&fit=crop",
     shortDesc: "Đạt IELTS 7.0+ với phương pháp học hiệu quả",
     level: "Trung cấp",
     language: "Tiếng Anh",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "60 giờ luyện thi IELTS",
-      "4 kỹ năng Reading/Writing/Listening/Speaking",
-      "Mock tests hàng tuần",
-      "Feedback chi tiết",
-      "Cam kết 7.0+"
-    ],
-    curriculum: [
-      {
-        title: "IELTS Reading",
-        lessons: ["Skimming & Scanning", "Question Types", "Time Management"]
-      },
-      {
-        title: "IELTS Writing",
-        lessons: ["Task 1 & 2", "Structure", "Vocabulary", "Grammar"]
-      },
-      {
-        title: "IELTS Listening",
-        lessons: ["Note-taking", "Prediction", "Different Accents"]
-      },
-      {
-        title: "IELTS Speaking",
-        lessons: ["Part 1,2,3", "Fluency", "Pronunciation", "Confidence"]
-      }
-    ]
+    certificate: true
   },
-
-  // ========== NEW PROGRAMMING COURSES ==========
   {
     id: 7,
     name: "Node.js Backend Development",
@@ -224,29 +148,17 @@ const mockData = [
     students: "6,540",
     duration: "42 giờ",
     instructor: "Võ Minh Hoàng",
-    image: "/images/courses/nodejs.jpg",
-    shortDesc: "Xây dựng API và backend scalable với Node.js và Express",
-    level: "Trung cấp",
-    language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "42 giờ Node.js chuyên sâu",
-      "REST API & GraphQL",
-      "Database với MongoDB",
-      "Authentication & Security",
-      "Deploy với Docker"
+    images: [
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop", // Server/Backend
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=250&fit=crop", // Node.js
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop", // API development
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=250&fit=crop"  // Backend code
     ],
-    curriculum: [
-      {
-        title: "Node.js Fundamentals",
-        lessons: ["Event Loop", "Modules", "NPM", "File System"]
-      },
-      {
-        title: "Express Framework",
-        lessons: ["Routing", "Middleware", "Error Handling", "Security"]
-      }
-    ]
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop",
+    shortDesc: "Xây dựng API và backend scalable với Node.js và Express",
+    level: "Nâng cao",
+    language: "Tiếng Việt",
+    certificate: true
   },
   {
     id: 8,
@@ -258,29 +170,17 @@ const mockData = [
     students: "4,320",
     duration: "38 giờ",
     instructor: "Đặng Thị Lan",
-    image: "/images/courses/vuejs.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=250&fit=crop", // Vue.js
+      "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400&h=250&fit=crop", // Vue development
+      "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=400&h=250&fit=crop", // Frontend dev
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop"  // JavaScript frameworks
+    ],
+    image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=250&fit=crop",
     shortDesc: "Học Vue.js 3 từ cơ bản đến nâng cao với Composition API",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "38 giờ Vue.js 3",
-      "Composition API",
-      "Vuex 4 & Pinia",
-      "Vue Router",
-      "TypeScript integration"
-    ],
-    curriculum: [
-      {
-        title: "Vue 3 Basics",
-        lessons: ["Reactivity", "Components", "Directives", "Events"]
-      },
-      {
-        title: "Advanced Vue",
-        lessons: ["Composition API", "Vuex", "Router", "Performance"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 9,
@@ -292,29 +192,17 @@ const mockData = [
     students: "3,780",
     duration: "55 giờ",
     instructor: "Nguyễn Đức Thắng",
-    image: "/images/courses/flutter.jpg",
-    shortDesc: "Phát triển ứng dụng mobile đa nền tảng với Flutter",
-    level: "Trung cấp",
-    language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "55 giờ Flutter development",
-      "Dart programming",
-      "State Management (Bloc, Provider)",
-      "Firebase integration",
-      "Publish to App Store & Play Store"
+    images: [
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop", // Mobile app
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop", // Flutter dev
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=400&h=250&fit=crop", // Mobile development
+      "https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&h=250&fit=crop"  // App development
     ],
-    curriculum: [
-      {
-        title: "Dart Language",
-        lessons: ["Syntax", "OOP", "Async Programming", "Collections"]
-      },
-      {
-        title: "Flutter Widgets",
-        lessons: ["Stateless/Stateful", "Layout", "Navigation", "Animation"]
-      }
-    ]
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop",
+    shortDesc: "Phát triển ứng dụng mobile đa nền tảng với Flutter",
+    level: "Nâng cao",
+    language: "Tiếng Việt",
+    certificate: true
   },
   {
     id: 10,
@@ -326,29 +214,17 @@ const mockData = [
     students: "5,210",
     duration: "48 giờ",
     instructor: "Lê Quang Minh",
-    image: "/images/courses/angular.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // Angular code
+      "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400&h=250&fit=crop", // Angular dev
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=250&fit=crop", // TypeScript
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Web framework
+    ],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
     shortDesc: "Xây dựng ứng dụng web enterprise với Angular",
     level: "Nâng cao",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "48 giờ Angular training",
-      "TypeScript mastery",
-      "RxJS & Observables",
-      "Testing với Jasmine",
-      "Enterprise patterns"
-    ],
-    curriculum: [
-      {
-        title: "Angular Fundamentals",
-        lessons: ["Components", "Services", "Dependency Injection", "Routing"]
-      },
-      {
-        title: "Advanced Angular",
-        lessons: ["RxJS", "State Management", "Testing", "Performance"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== DATA SCIENCE & AI ==========
@@ -362,29 +238,17 @@ const mockData = [
     students: "2,890",
     duration: "65 giờ",
     instructor: "Dr. Phạm Văn Khoa",
-    image: "/images/courses/tensorflow.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=250&fit=crop", // AI/ML
+      "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=400&h=250&fit=crop", // Neural network
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop", // AI robot
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop"  // Machine learning
+    ],
+    image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=250&fit=crop",
     shortDesc: "Deep Learning và Neural Networks với TensorFlow 2.0",
     level: "Nâng cao",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "65 giờ ML chuyên sâu",
-      "TensorFlow 2.0 & Keras",
-      "CNN, RNN, LSTM",
-      "Computer Vision",
-      "NLP Projects"
-    ],
-    curriculum: [
-      {
-        title: "ML Fundamentals",
-        lessons: ["Supervised Learning", "Unsupervised Learning", "Neural Networks"]
-      },
-      {
-        title: "Deep Learning",
-        lessons: ["CNN", "RNN", "GAN", "Transfer Learning"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 12,
@@ -396,29 +260,17 @@ const mockData = [
     students: "3,450",
     duration: "32 giờ",
     instructor: "Trần Minh Đức",
-    image: "/images/courses/r-programming.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop", // Data charts
+      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=250&fit=crop", // Data visualization
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop", // Analytics dashboard
+      "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&h=250&fit=crop"  // Statistical analysis
+    ],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
     shortDesc: "Phân tích dữ liệu thống kê và visualization với R",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "32 giờ R programming",
-      "ggplot2 visualization",
-      "Statistical analysis",
-      "Tidyverse ecosystem",
-      "Shiny applications"
-    ],
-    curriculum: [
-      {
-        title: "R Basics",
-        lessons: ["Data Types", "Functions", "Packages", "Import/Export"]
-      },
-      {
-        title: "Data Analysis",
-        lessons: ["dplyr", "ggplot2", "Statistical Tests", "Modeling"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 13,
@@ -430,29 +282,17 @@ const mockData = [
     students: "8,760",
     duration: "28 giờ",
     instructor: "Nguyễn Thị Hồng",
-    image: "/images/courses/sql.jpg",
-    shortDesc: "Làm chủ SQL từ cơ bản đến nâng cao cho Data Analysis",
-    level: "Tất cả cấp độ",
-    language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "28 giờ SQL training",
-      "PostgreSQL & MySQL",
-      "Advanced queries",
-      "Window functions",
-      "Database optimization"
+    images: [
+      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop", // Database
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop", // SQL server
+      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400&h=250&fit=crop", // Data warehouse
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Database management
     ],
-    curriculum: [
-      {
-        title: "SQL Fundamentals",
-        lessons: ["SELECT", "WHERE", "JOIN", "GROUP BY"]
-      },
-      {
-        title: "Advanced SQL",
-        lessons: ["Window Functions", "CTEs", "Stored Procedures", "Performance"]
-      }
-    ]
+    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop",
+    shortDesc: "Làm chủ SQL từ cơ bản đến nâng cao cho Data Analysis",
+    level: "Cơ bản",
+    language: "Tiếng Việt",
+    certificate: true
   },
 
   // ========== DESIGN COURSES ==========
@@ -466,29 +306,17 @@ const mockData = [
     students: "11,200",
     duration: "35 giờ",
     instructor: "Lê Thị Mai",
-    image: "/images/courses/photoshop.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=250&fit=crop", // Photoshop
+      "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&h=250&fit=crop", // Photo editing
+      "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=250&fit=crop", // Graphic design
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=250&fit=crop"  // Design workspace
+    ],
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=250&fit=crop",
     shortDesc: "Làm chủ Photoshop từ cơ bản đến chuyên nghiệp",
     level: "Tất cả cấp độ",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "35 giờ Photoshop training",
-      "Photo retouching",
-      "Digital art creation",
-      "Print design",
-      "Portfolio projects"
-    ],
-    curriculum: [
-      {
-        title: "Photoshop Basics",
-        lessons: ["Interface", "Tools", "Layers", "Selections"]
-      },
-      {
-        title: "Advanced Techniques",
-        lessons: ["Masking", "Compositing", "Color Grading", "Typography"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 15,
@@ -500,29 +328,17 @@ const mockData = [
     students: "6,890",
     duration: "30 giờ",
     instructor: "Phạm Văn Tú",
-    image: "/images/courses/illustrator.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=250&fit=crop", // Vector design
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=400&h=250&fit=crop", // Illustrator
+      "https://images.unsplash.com/photo-1558655146-9f40138ecc05?w=400&h=250&fit=crop", // Logo design
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=250&fit=crop"  // Creative design
+    ],
+    image: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=250&fit=crop",
     shortDesc: "Thiết kế vector chuyên nghiệp với Adobe Illustrator",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "30 giờ Illustrator",
-      "Logo design",
-      "Icon creation",
-      "Typography",
-      "Brand identity"
-    ],
-    curriculum: [
-      {
-        title: "Vector Basics",
-        lessons: ["Pen Tool", "Shapes", "Pathfinder", "Colors"]
-      },
-      {
-        title: "Logo Design",
-        lessons: ["Concept", "Sketching", "Refinement", "Brand Guidelines"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== MARKETING COURSES ==========
@@ -536,29 +352,17 @@ const mockData = [
     students: "9,450",
     duration: "25 giờ",
     instructor: "Đinh Văn Nam",
-    image: "/images/courses/facebook-ads.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=250&fit=crop", // Facebook ads
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop", // Social media marketing
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop", // Digital advertising
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"  // Marketing analytics
+    ],
+    image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=250&fit=crop",
     shortDesc: "Chạy quảng cáo Facebook hiệu quả và tối ưu ROI",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "25 giờ Facebook Ads",
-      "Campaign optimization",
-      "Audience targeting",
-      "Creative strategies",
-      "ROI tracking"
-    ],
-    curriculum: [
-      {
-        title: "Facebook Ads Basics",
-        lessons: ["Campaign Structure", "Targeting", "Budgeting", "Bidding"]
-      },
-      {
-        title: "Advanced Strategies",
-        lessons: ["Lookalike Audiences", "Retargeting", "A/B Testing", "Scaling"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 17,
@@ -570,29 +374,17 @@ const mockData = [
     students: "7,320",
     duration: "30 giờ",
     instructor: "Vũ Thị Linh",
-    image: "/images/courses/google-ads.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400&h=250&fit=crop", // Google ads
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // Google Ads code
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // PPC marketing
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"  // Online advertising
+    ],
+    image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400&h=250&fit=crop",
     shortDesc: "Quảng cáo Google Ads từ Search đến Display và Shopping",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "30 giờ Google Ads",
-      "Search & Display campaigns",
-      "Shopping ads",
-      "YouTube advertising",
-      "Google Analytics integration"
-    ],
-    curriculum: [
-      {
-        title: "Search Campaigns",
-        lessons: ["Keyword Research", "Ad Copy", "Landing Pages", "Quality Score"]
-      },
-      {
-        title: "Advanced Campaigns",
-        lessons: ["Display", "Shopping", "YouTube", "App Campaigns"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== LANGUAGE COURSES ==========
@@ -606,29 +398,17 @@ const mockData = [
     students: "4,560",
     duration: "50 giờ",
     instructor: "李小红 (Li Xiaohong)",
-    image: "/images/courses/chinese-hsk.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?w=400&h=250&fit=crop", // Chinese books
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop", // Chinese characters
+      "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400&h=250&fit=crop", // Language learning
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Chinese culture
+    ],
+    image: "https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?w=400&h=250&fit=crop",
     shortDesc: "Học tiếng Trung HSK 1-6 với giáo viên bản ngữ",
     level: "Tất cả cấp độ",
     language: "Tiếng Trung",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "50 giờ học tiếng Trung",
-      "HSK 1-6 curriculum",
-      "Pinyin & Characters",
-      "Speaking practice",
-      "Cultural insights"
-    ],
-    curriculum: [
-      {
-        title: "HSK 1-2 Basics",
-        lessons: ["Pinyin", "Basic Characters", "Greetings", "Numbers"]
-      },
-      {
-        title: "HSK 3-4 Intermediate",
-        lessons: ["Grammar Patterns", "Conversation", "Reading", "Writing"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 19,
@@ -640,29 +420,17 @@ const mockData = [
     students: "8,190",
     duration: "60 giờ",
     instructor: "田中先生 (Tanaka Sensei)",
-    image: "/images/courses/japanese.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=250&fit=crop", // Japanese books
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop", // Hiragana and Katakana
+      "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400&h=250&fit=crop", // Kanji learning
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Japanese culture
+    ],
+    image: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=250&fit=crop",
     shortDesc: "Tiếng Nhật từ N5 đến N3 với phương pháp tương tác",
     level: "Tất cả cấp độ",
     language: "Tiếng Nhật",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "60 giờ tiếng Nhật",
-      "Hiragana, Katakana, Kanji",
-      "JLPT N5-N3 prep",
-      "Speaking practice",
-      "Japanese culture"
-    ],
-    curriculum: [
-      {
-        title: "Hiragana & Katakana",
-        lessons: ["Writing Systems", "Pronunciation", "Basic Vocabulary"]
-      },
-      {
-        title: "Grammar & Kanji",
-        lessons: ["Particles", "Verb Forms", "Kanji Reading", "Conversation"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== BUSINESS COURSES ==========
@@ -676,29 +444,17 @@ const mockData = [
     students: "15,670",
     duration: "20 giờ",
     instructor: "Hoàng Văn Đông",
-    image: "/images/courses/excel.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop", // Excel spreadsheet
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // Excel formulas
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Data analysis
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Business analytics
+    ],
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
     shortDesc: "Làm chủ Excel với formulas nâng cao và Dashboard",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "20 giờ Excel mastery",
-      "Advanced formulas",
-      "Pivot Tables",
-      "VBA basics",
-      "Dashboard creation"
-    ],
-    curriculum: [
-      {
-        title: "Advanced Formulas",
-        lessons: ["VLOOKUP", "INDEX-MATCH", "Array Formulas", "Conditional Logic"]
-      },
-      {
-        title: "Data Analysis",
-        lessons: ["Pivot Tables", "Charts", "Dashboard", "VBA Macros"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 21,
@@ -710,29 +466,17 @@ const mockData = [
     students: "3,240",
     duration: "40 giờ",
     instructor: "MBA Trần Quốc Việt",
-    image: "/images/courses/pmp.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop", // Project management
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // PMP exam
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Agile methodology
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Project planning
+    ],
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop",
     shortDesc: "Chuẩn bị chứng chỉ PMP và kỹ năng quản lý dự án",
     level: "Nâng cao",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "40 giờ PMP prep",
-      "PMBOK Guide 7th edition",
-      "Agile methodologies",
-      "Practice exams",
-      "Real-world scenarios"
-    ],
-    curriculum: [
-      {
-        title: "Project Management Fundamentals",
-        lessons: ["Project Lifecycle", "Stakeholders", "Charter", "Planning"]
-      },
-      {
-        title: "Execution & Control",
-        lessons: ["Risk Management", "Quality", "Communication", "Agile"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== LIFESTYLE COURSES ==========
@@ -746,29 +490,17 @@ const mockData = [
     students: "6,780",
     duration: "35 giờ",
     instructor: "Nguyễn Hoàng Long",
-    image: "/images/courses/photography.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&h=250&fit=crop", // Photography camera
+      "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&h=250&fit=crop", // Photo composition
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=250&fit=crop", // Lightroom editing
+      "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop"  // Photography tips
+    ],
+    image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&h=250&fit=crop",
     shortDesc: "Chụp ảnh chuyên nghiệp từ cơ bản đến nâng cao",
     level: "Tất cả cấp độ",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "35 giờ photography",
-      "Camera techniques",
-      "Composition rules",
-      "Lightroom editing",
-      "Portfolio building"
-    ],
-    curriculum: [
-      {
-        title: "Camera Basics",
-        lessons: ["Exposure Triangle", "Focus", "Composition", "Lighting"]
-      },
-      {
-        title: "Advanced Photography",
-        lessons: ["Portrait", "Landscape", "Street", "Post-processing"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 23,
@@ -780,29 +512,17 @@ const mockData = [
     students: "9,340",
     duration: "30 giờ",
     instructor: "Musician Hải Anh",
-    image: "/images/courses/guitar.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&h=250&fit=crop", // Acoustic guitar
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop", // Guitar chords
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=250&fit=crop", // Strumming patterns
+      "https://images.unsplash.com/photo-1572945378234-6a4f3e4f3e4b?w=400&h=250&fit=crop"  // Music theory
+    ],
+    image: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&h=250&fit=crop",
     shortDesc: "Học guitar acoustic từ zero đến có thể tự đệm hát",
     level: "Cơ bản",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "30 giờ guitar lessons",
-      "Chord progressions",
-      "Strumming patterns",
-      "Fingerpicking",
-      "Popular songs"
-    ],
-    curriculum: [
-      {
-        title: "Guitar Fundamentals",
-        lessons: ["Holding Guitar", "Basic Chords", "Strumming", "Tuning"]
-      },
-      {
-        title: "Playing Songs",
-        lessons: ["Chord Changes", "Rhythm", "Fingerpicking", "Performance"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== HEALTH & FITNESS ==========
@@ -816,29 +536,17 @@ const mockData = [
     students: "12,450",
     duration: "25 giờ",
     instructor: "Lê Thị Hương",
-    image: "/images/courses/yoga.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=250&fit=crop", // Yoga pose
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Meditation
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop", // Yoga class
+      "https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&h=250&fit=crop"  // Wellness
+    ],
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=250&fit=crop",
     shortDesc: "Yoga cơ bản cho người mới bắt đầu, cải thiện sức khỏe",
     level: "Cơ bản",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "25 giờ yoga practice",
-      "Basic poses",
-      "Breathing techniques",
-      "Meditation",
-      "Flexibility improvement"
-    ],
-    curriculum: [
-      {
-        title: "Yoga Basics",
-        lessons: ["Breathing", "Basic Poses", "Sun Salutation", "Alignment"]
-      },
-      {
-        title: "Intermediate Practice",
-        lessons: ["Vinyasa Flow", "Balance Poses", "Backbends", "Meditation"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 25,
@@ -850,29 +558,17 @@ const mockData = [
     students: "18,230",
     duration: "20 giờ",
     instructor: "PT Minh Tuấn",
-    image: "/images/courses/workout.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop", // Home workout
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Bodyweight exercises
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop", // Fitness at home
+      "https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&h=250&fit=crop"  // Healthy lifestyle
+    ],
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
     shortDesc: "Tập luyện tại nhà hiệu quả không cần dụng cụ",
     level: "Tất cả cấp độ",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "20 giờ workout",
-      "No equipment needed",
-      "Full body training",
-      "Nutrition guide",
-      "Progress tracking"
-    ],
-    curriculum: [
-      {
-        title: "Bodyweight Basics",
-        lessons: ["Push-ups", "Squats", "Planks", "Cardio"]
-      },
-      {
-        title: "Advanced Training",
-        lessons: ["HIIT", "Strength", "Flexibility", "Recovery"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== TECHNOLOGY TRENDS ==========
@@ -886,29 +582,17 @@ const mockData = [
     students: "2,890",
     duration: "40 giờ",
     instructor: "Blockchain Expert Tuấn",
-    image: "/images/courses/blockchain.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop", // Blockchain
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Bitcoin
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop", // Ethereum
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop"  // DeFi
+    ],
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop",
     shortDesc: "Hiểu về Blockchain, Bitcoin, Ethereum và DeFi",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "40 giờ blockchain",
-      "Cryptocurrency trading",
-      "Smart contracts",
-      "DeFi protocols",
-      "NFT marketplace"
-    ],
-    curriculum: [
-      {
-        title: "Blockchain Fundamentals",
-        lessons: ["What is Blockchain", "Bitcoin", "Ethereum", "Mining"]
-      },
-      {
-        title: "Advanced Topics",
-        lessons: ["Smart Contracts", "DeFi", "NFTs", "Trading Strategies"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 27,
@@ -920,29 +604,17 @@ const mockData = [
     students: "4,120",
     duration: "50 giờ",
     instructor: "AWS Solutions Architect Hùng",
-    image: "/images/courses/aws.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop", // Cloud computing
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // AWS services
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop", // Cloud architecture
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop"  // DevOps
+    ],
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop",
     shortDesc: "Làm chủ Amazon Web Services từ cơ bản đến nâng cao",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "50 giờ AWS training",
-      "EC2, S3, RDS, Lambda",
-      "Solutions Architect prep",
-      "Hands-on labs",
-      "Real-world projects"
-    ],
-    curriculum: [
-      {
-        title: "AWS Fundamentals",
-        lessons: ["IAM", "EC2", "S3", "VPC"]
-      },
-      {
-        title: "Advanced Services",
-        lessons: ["Lambda", "RDS", "CloudFormation", "Monitoring"]
-      }
-    ]
+    certificate: true
   },
 
   // ========== ADDITIONAL SPECIALIZED COURSES ==========
@@ -956,29 +628,17 @@ const mockData = [
     students: "3,560",
     duration: "45 giờ",
     instructor: "Game Dev Phong",
-    image: "/images/courses/unity.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=250&fit=crop", // Game development
+      "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=250&fit=crop", // Unity engine
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // C# programming
+      "https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&h=250&fit=crop"  // Game design
+    ],
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=250&fit=crop",
     shortDesc: "Tạo game 2D và 3D chuyên nghiệp với Unity Engine",
     level: "Trung cấp",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "45 giờ Unity development",
-      "2D & 3D game creation",
-      "C# programming",
-      "Physics & Animation",
-      "Publish to stores"
-    ],
-    curriculum: [
-      {
-        title: "Unity Basics",
-        lessons: ["Interface", "GameObjects", "Scripts", "Physics"]
-      },
-      {
-        title: "Game Development",
-        lessons: ["Level Design", "UI/UX", "Audio", "Publishing"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 29,
@@ -990,29 +650,17 @@ const mockData = [
     students: "7,890",
     duration: "25 giờ",
     instructor: "Content Marketer Hà",
-    image: "/images/courses/copywriting.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop", // Writing
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // Content strategy
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // SEO writing
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Brand storytelling
+    ],
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop",
     shortDesc: "Viết content bán hàng và xây dựng thương hiệu",
     level: "Tất cả cấp độ",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "25 giờ copywriting",
-      "Sales funnel writing",
-      "Email marketing",
-      "Social media content",
-      "Brand storytelling"
-    ],
-    curriculum: [
-      {
-        title: "Copywriting Fundamentals",
-        lessons: ["Headlines", "AIDA Formula", "Emotional Triggers", "CTA"]
-      },
-      {
-        title: "Content Strategy",
-        lessons: ["Content Calendar", "SEO Writing", "Social Media", "Email"]
-      }
-    ]
+    certificate: true
   },
   {
     id: 30,
@@ -1024,29 +672,17 @@ const mockData = [
     students: "1,890",
     duration: "60 giờ",
     instructor: "Security Expert Minh",
-    image: "/images/courses/cybersecurity.jpg",
+    images: [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop", // Cybersecurity
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop", // Ethical hacking
+      "https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=400&h=250&fit=crop", // Network security
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop"  // Web application security
+    ],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop",
     shortDesc: "Bảo mật mạng và ethical hacking cho người mới bắt đầu",
     level: "Nâng cao",
     language: "Tiếng Việt",
-    subtitle: true,
-    certificate: true,
-    features: [
-      "60 giờ cybersecurity",
-      "Penetration testing",
-      "Network security",
-      "Web application security",
-      "CEH certification prep"
-    ],
-    curriculum: [
-      {
-        title: "Security Fundamentals",
-        lessons: ["Security Principles", "Threat Landscape", "Risk Assessment"]
-      },
-      {
-        title: "Ethical Hacking",
-        lessons: ["Reconnaissance", "Scanning", "Exploitation", "Post-exploitation"]
-      }
-    ]
+    certificate: true
   }
 ];
 

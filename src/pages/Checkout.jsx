@@ -472,26 +472,26 @@ export default function Checkout() {
                       onClick={processPayment}
                       loading={processingPayment}
                       style={{
-                        width: '100%',
+                        // 🔧 FIX: Responsive width
+                        width: window.innerWidth <= 768 ? 'calc(100% - 80px)' : 'auto', // Mobile: trừ width của nút "Quay lại"
+                        minWidth: '150px', // Desktop: minimum width
                         height: '50px',
                         fontSize: '16px',
                         fontWeight: 'bold',
                         background: getPaymentMethodInfo(paymentMethod)?.color || '#1890ff',
                         borderColor: getPaymentMethodInfo(paymentMethod)?.color || '#1890ff',
-                        borderRadius: '8px'
+                        borderRadius: '8px',
+                        marginLeft: '12px' // 🆕 Spacing từ nút "Quay lại"
                       }}
                       disabled={!paymentMethod || cartItems.length === 0}
                     >
                       {processingPayment ? (
-                        <Space>
-                          <span>⏳</span>
-                          {paymentMessage || 'Đang xử lý thanh toán...'}
-                        </Space>
+                        'Đang xử lý...'
                       ) : (
-                        <Space>
-                          <span>{getPaymentMethodInfo(paymentMethod)?.icon || '💳'}</span>
-                          Thanh toán {finalPrice?.toLocaleString()}₫
-                        </Space>
+                        // 🔧 FIX: Responsive text
+                        window.innerWidth <= 768 
+                          ? `${finalPrice?.toLocaleString()}₫` // Mobile: chỉ hiện số tiền
+                          : `Thanh toán ${finalPrice?.toLocaleString()}₫` // Desktop: full text
                       )}
                     </Button>
                   </div>
